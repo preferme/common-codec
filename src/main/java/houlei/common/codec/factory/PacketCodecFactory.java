@@ -39,7 +39,7 @@ public class PacketCodecFactory {
 
         DefaultPacketCodec<T> codec = new DefaultPacketCodec<T>();
         codec.setByteOrder(ByteOrder.BIG_ENDIAN);
-        codec.setVersion((short)0x10);
+        codec.setVersion((short)0x100);
         codec.setCommandId(commandId);
         codec.setSequenceIdGenerator(SequenceIdGenerator.DEFAULT);
         codec.setType(objectType);
